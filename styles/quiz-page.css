@@ -92,11 +92,17 @@ h1{
     padding: 15px;
 }
 
+.latest-quest h1{
+    text-align: center;
+}
+
 .quiz-container{
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
+     justify-content: center;
 }
+
 .quiz-card{
     width: 280px;
     padding: 20px 10px;
@@ -193,10 +199,6 @@ h1{
 
     .img-container img{
         width: 100%;
-    }
-
-    .quiz-container{
-        justify-content: center;
     }
 }
 
