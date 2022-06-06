@@ -1,0 +1,243 @@
+:root{
+    /* ===== Colors ===== */
+    --body-color: #F5F5F5;
+    --sidebar-color: #FFF;
+    --primary-color: #4A3FC8;
+    --primary-color-light: #cdc8ff;
+    --toggle-color: #4A3FC8;
+    --text-color: #2d2d2d;
+    --white-color: #FFF;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.5s ease;
+}
+
+.home .top{
+    width: 100%;
+    padding: 20px 30px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1rem;
+    background-color: var(--sidebar-color);
+}
+h1{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.top .search{
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color-light);
+    border-radius: 5px;
+    padding: 5px 7px;
+}
+
+.top .search i{
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.top .search input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 7px;
+    color: inherit;
+}
+
+.top select{
+    background-color: var(--primary-color-light);
+    padding: 5px 7px;
+    /* border: 1px solid var(--primary-color); */
+    border: none;
+    border-radius: 5px;
+    color: inherit;
+}
+
+.home .img-container{
+    background-color: #4A3FC8;
+    background-image: url("../images/quiz-page-bg.png");
+    background-size: cover;
+    width: 100%;
+    padding: 5px 30px;
+    /* height: 700px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-container :is(h1, p){
+    color: var(--white-color);
+}
+
+.img-container h1{
+    font-size: 4rem;
+    padding-top: 30px;
+}
+
+
+.img-container img{
+    width: 60%;
+}
+
+.latest-quest{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.quiz-container{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.quiz-card{
+    width: 280px;
+    padding: 20px 10px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(103, 103, 103, 0.7);
+    margin: 10px;
+}
+
+.quiz-card:hover > img{
+    transform: scale(1.2);
+}
+
+.quiz-card:hover{
+    color: #2d2d2d;
+    transition: 1s ease;
+}
+
+.crypto:hover{
+    background-image: radial-gradient(circle, #8EECF5, #90DBF4, #A3C4F3);  
+}
+
+.maths:hover{
+    background-image: radial-gradient(circle, #FBF8CC, #FDE4CF, #FFCFD2);  
+}
+
+.business:hover{
+    background-image: radial-gradient(circle, #FFCFD2, #F1C0E8, #CFBAF0);  
+}
+
+.science:hover{
+    background-image: radial-gradient(circle, #98F5E1, #98F5E1, #90DBF4);  
+}
+
+.technology:hover{
+    background-image: radial-gradient(circle, #90DBF4, #A3C4F3, #CFBAF0);  
+}
+
+.blockchain:hover{
+    background-image: radial-gradient(circle, #FBF8CC, #B9FBC0, #98F5E1);  
+}
+
+.social:hover{
+    background-image: radial-gradient(circle, #FDE4CF, #FFCFD2, #F1C0E8 );  
+}
+
+
+
+.quiz-card :is(h2, p, .btn){
+    margin-top: 10px;
+}
+
+.quiz-card h3{
+    color: gray;
+    font-weight: 200;
+    font-size: 1rem;
+}
+.quiz-card img{
+    width: 100px;
+    border-radius: 100%;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    background-color: var(--white-color);
+    transition: var(--tran-05);
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    .top h1{
+        display: none;
+    }
+
+    .img-container img{
+        width: 100%;
+    }
+
+    .quiz-container{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home .top{
+        padding: 10px;
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .top :is(.search, select){
+        width: 200px;
+    }
+
+    .img-container h1{
+        padding-top: 10px;
+        font-size: 2rem;
+    }
+
+    .img-container p{
+        margin-bottom: 10px;
+    }
+
+    .latest-quest{
+        padding: 10px;
+    }
+
+    .quiz-container{
+        padding: 10px 0;
+    }
+
+    .quiz-card{
+        margin: 15px 0;
+        padding: 10px;
+    }
+
+    .quiz-card h2{
+        font-size: 1.3rem;
+    }
+
+    .quiz-card .btn{
+        padding: 7px 20px;
+    }
+}
