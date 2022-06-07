@@ -1,0 +1,93 @@
+:root{
+    /* ===== Colors ===== */
+    --body-color: #F5F5F5;
+    --sidebar-color: #FFF;
+    --primary-color: #4A3FC8;
+    --primary-color-light: #cdc8ff;
+    --toggle-color: #4A3FC8;
+    --text-color: #2d2d2d;
+    --white-color: #fff;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+.home .heading{
+    padding: 12px 30px;
+    background-color: var(--sidebar-color);
+    /* box-shadow: 0px 15px 10px -15px rgb(31, 30, 30);  */
+
+}
+
+.accordion{
+    /* max-width: 95%; */
+    display: block;
+    width: 90%;
+    background: var(--sidebar-color);
+    margin: 20px auto;
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow:  0 0 4px rgba(0,0,0,0.2);
+}
+.accordion .accordion-content{
+    margin: 10px 0;
+    border-radius: 4px;
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+    /* border: 2px solid var(--primary-color); */
+    overflow: hidden;
+    transition: var(--tran-05);
+}
+
+.accordion-category{
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.accordion .accordion-content:hover{
+    border: 1px solid var(--primary-color);
+}
+
+.accordion-content.open{
+    padding-bottom: 10px;
+}
+.accordion-content header{
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+}
+.accordion-content.open header{
+    /* min-height: 30px; */
+    padding: 15px;
+    /* border: 2px solid red; */
+}
+.accordion-content header .title{
+    font-size: 1rem;
+    font-weight: 600;
+    /* color: #333; */
+}
+.accordion-content header i{
+    font-size: 1rem;
+    /* color: #333; */
+}
+.accordion-content .description{
+    height: 0;
+    font-size: 1rem;
+    /* color: #333; */
+    font-weight: 500;
+    padding: 0 15px;
+    transition: all 0.2s linear;
+}
+
+body.dark .home .accordion-category{
+    color: var(--text-color);
+}
