@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quiz</title>
+
+    <!-- ***********CSS  linking*********** -->
+    <!-- navbar css link -->
+    <link rel="stylesheet" href="../styles/navbar.css">
+
+    <!-- quiz page css link -->
+    <!-- <link rel="stylesheet" href="../styles/quiz-page.css"> -->
+
+    <!-- my-quiz page css link -->
+    <link rel="stylesheet" href="../styles/my-quiz.css">
+
+     <!-- quiz card css link -->
+    <link rel="stylesheet" href="../styles/quiz-card.css">
+
+     <!-- buttons css link -->
+     <link rel="stylesheet" href="../styles/button.css">
+
+
+    <!-- ***********boxicons css link (link of icons used)*********** -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- navbar starts here -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../images/profile.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Your Name</span>
+                    <span class="profession">Welcome !</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="home.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-link">
+                        <a href="quiz-page.html">
+                            <i class='bx bx-check-square icon' ></i>
+                            <span class="text nav-text">Quests</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="my-quiz.html">
+                            <i class='bx bx-user-check icon'></i>
+                            <span class="text nav-text">My Quests</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-help-circle icon' ></i>
+                            <span class="text nav-text">Help</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-align-justify icon' ></i>
+                            <span class="text nav-text">T&Cs</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- Main section starts here -->
+    <section class="home">
+        <!-- header -->
+        <div class="top">
+            <h1>My Quest</h1>
+            <div class="search">
+                <i class='bx bx-search icon'></i>
+                <input type="search" name="" id="" placeholder="search for quest">
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <!-- main image container -->
+        <div class="img-container">
+           <div class="left">
+               <img src="../images/my-quiz.png" alt="my quiz vector">
+           </div>
+           <div class="right">
+               <h1>My Quest</h1>
+               <div class="progress">
+                   <h3>My Progress</h3>
+                   <div class="count">US$0.00</div>
+                   <p>Total Rewards Earned</p>
+                   <div class="count">00</div>
+                   <p>Quest Participated</p>
+                   <div class="count">00</div>
+                   <p>Quest Passed</p>
+                   <div class="count">00</div>
+                   <p>Quest Failed</p>
+               </div>
+           </div>
+        </div>
+        <!-- main image container ends -->
+
+        <!-- latest quest container -->
+        <div class="my-quest">
+            <h1>My Quest</h1>
+            <div class="quiz-container">
+                <div class="quiz-card crypto">
+                    <img src="../images/category-crypto.svg" alt="crypto-currencies">
+                    <h2>Practice crypto</h2>
+                    <h3>Crypto Currencies</h3>
+                    <p>$5 Reward | Passed</p>
+                    <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                    <a href="#"><button class="btn">View</button></a>
+                </div>
+                <div class="quiz-card maths">
+                    <img src="../images/category-maths.svg" alt="mathematics">
+                    <h2>Practice Maths</h2>
+                    <h3>Mathematics</h3>
+                    <p>$5 Reward | Passed</p>
+                    <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                    <a href="#"><button class="btn">View</button></a>
+                </div>
+                <div class="quiz-card business">
+                    <img src="../images/category-business.svg" alt="business">
+                    <h2>Practice Business</h2>
+                    <h3>Business</h3>
+                    <p>$5 Reward | Failed</p>
+                    <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                    <a href="#"><button class="btn">View</button></a>
+                </div>
+                <div class="quiz-card science">
+                    <img src="../images/cateogry-science.svg" alt="science">
+                    <h2>Practice Science</h2>
+                    <h3>Science</h3>
+                    <p>$5 Reward | Passed</p>
+                    <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                    <a href="#"><button class="btn">View</button></a>
+                </div>
+                <div class="quiz-card technology">
+                    <img src="../images/category-technology.svg" alt="technology">
+                    <h2>Practice Technology</h2>
+                    <h3>Technology</h3>
+                    <p>$5 Reward | Failed</p>
+                    <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                    <a href="#"><button class="btn">View</button></a>
+                </div>
+                <div class="quiz-card blockchain">
+                    <img src="../images/category-blockchain.svg" alt="blockchain">
+                    <h2>Practice Block Chain</h2>
+                    <h3>Block Chain</h3>
+                    <p>$5 Reward | Failed</p>
+                    <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                    <a href="#"><button class="btn">View</button></a>
+                </div>
+                <div class="quiz-card social">
+                    <img src="../images/category-social.svg" alt="social-science">
+                    <h2>Practice Social Science</h2>
+                    <h3>Social Science</h3>
+                    <p>$5 Reward | Passed</p>
+                    <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                    <a href="#"><button class="btn">View</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- latest quest ends here -->
+
+        
+
+
+    </section>
+    <!-- Main section ends here -->
+
+
+    <!-- ***********script links*********** -->
+
+    <!-- quiz page script linking -->
+    <script src="../script/quiz-page.js"></script>
+
+    <!-- navbar scipt link -->
+    <script src="../script/navbar.js"></script>
+
+</body>
+</html>
