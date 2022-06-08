@@ -357,6 +357,10 @@ hr{
    color: var(--primary-color);
 }
 
+.extra a{
+    color: var(--primary-color);
+}
+
 footer{
     width: 100%;
     padding: 20px;
