@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-  <!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!----======== CSS ======== -->
+
+    <!-- ***********CSS  linking*********** -->
+    <!-- navbar css link -->
     <link rel="stylesheet" href="../styles/navbar.css">
-    
+
+    <!-- home css link -->
+    <link rel="stylesheet" href="../styles/home.css">
+
+    <!-- button css link -->
+    <link rel="stylesheet" href="../styles/button.css">
+
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
-    <!--<title>Dashboard Sidebar Menu</title>--> 
+
+    <title>Home</title>
 </head>
+
 <body>
+
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -42,14 +51,14 @@
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="home.html">
-                            <i class='bx bx-home-alt icon' ></i>
+                            <i class='bx bx-home-alt icon'></i>
                             <span class="text nav-text">Home</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="quiz-page.html">
-                            <i class='bx bx-check-square icon' ></i>
+                            <i class='bx bx-check-square icon'></i>
                             <span class="text nav-text">Quests</span>
                         </a>
                     </li>
@@ -63,21 +72,21 @@
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-help-circle icon' ></i>
+                            <i class='bx bx-help-circle icon'></i>
                             <span class="text nav-text">Help</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-align-justify icon' ></i>
+                            <i class='bx bx-align-justify icon'></i>
                             <span class="text nav-text">T&Cs</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-wallet icon' ></i>
+                            <i class='bx bx-wallet icon'></i>
                             <span class="text nav-text">Wallets</span>
                         </a>
                     </li>
@@ -88,7 +97,7 @@
             <div class="bottom-content">
                 <li class="">
                     <a href="#">
-                        <i class='bx bx-log-out icon' ></i>
+                        <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Logout</span>
                     </a>
                 </li>
@@ -104,17 +113,147 @@
                         <span class="switch"></span>
                     </div>
                 </li>
-                
+
             </div>
         </div>
 
     </nav>
 
     <section class="home">
-        <div class="text">Dashboard Sidebar</div>
+        <div class="heading">Welcome Chetna!</div>
+
+        <div class="main-container">
+            <div class="left">
+                <div class="guide">
+                    <div class="info">
+                        <p><i class='bx bxs-info-circle'></i> New User Guide</p>
+                        <p>Kindly go through our user guide for information on how quest participation, review,
+                            payments, events and exp system works.</p>
+                        <a href="guide.html"><button class="btn">Got to Guide</button></a>
+                    </div>
+                    <div class="img">
+                        <img src="../images/home-boy.svg" alt="guide-img">
+                    </div>
+                </div>
+
+
+                <div class="cards-container">
+                    <div class="top">🔥 Featured Content</div>
+
+                    <div class="cards">
+                        <p><i class='bx bxs-videos'></i> Course</p>
+                        <p>Introduction to Python</p>
+                        <p>
+                            Python is a general-purpose language that is used in different fields, ranging from data
+                            science to web development to even web-scraping.
+                        </p>
+                       <a href="#"> <button class="btn">View Course</button></a>
+                    </div>
+
+                    <div class="top">💰 Quests in Progress</div>
+
+                    <div class="cards">
+                        <p><i class='bx bx-check-square icon'></i> Quest</p>
+                        <p>You've not joined any ongoing quests</p>
+                        <p>
+                            Check out our ongoing quests!
+                        </p>
+                       <a href="#"> <button class="btn">View Quest</button></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="right">
+                <div class="updates">
+                    <div class="header"><i class='bx bxs-check-circle'></i> Recent Updates</div>
+                    <div class="updates-info">
+                        <h2>Jun 5, 2022</h2>
+                        <p>Our Algorand Campaign is live! We have a special bonus exp program - check out the campaign
+                            page for details!
+                            <br> <br>
+                            As part of the Algorand campaign, we are providing a new withdrawal method - ALGO tokens -
+                            which will be available from limited time from 21 June till 15 July. - Check our guide for
+                            details.
+                        </p>
+                    </div>
+                    <div class="updates-info">
+                        <h2>Jun 5, 2022</h2>
+                        <p>Our Algorand Campaign is live! We have a special bonus exp program - check out the campaign
+                            page for details!
+                            <br> <br>
+                            As part of the Algorand campaign, we are providing a new withdrawal method - ALGO tokens -
+                            which will be available from limited time from 21 June till 15 July. - Check our guide for
+                            details.
+                        </p>
+                    </div>
+                    <div class="updates-info">
+                        <h2>Jun 5, 2022</h2>
+                        <p>Our Algorand Campaign is live! We have a special bonus exp program - check out the campaign
+                            page for details!
+                            <br> <br>
+                            As part of the Algorand campaign, we are providing a new withdrawal method - ALGO tokens -
+                            which will be available from limited time from 21 June till 15 July. - Check our guide for
+                            details.
+                        </p>
+                    </div>
+                </div>
+                <div class="join">
+                    <p>
+                        Join our community!
+                        <br>
+                        <a href=""><span class="img">
+                                <img src="../images/discord.svg" alt="">
+                            </span></a>
+                        <a href=""><span class="img">
+                                <img src="../images/twitter.svg" alt="">
+                            </span></a>
+                        <a href=""><span class="img">
+                                <img src="../images/facebook.svg" alt="">
+                            </span></a>
+                        <a href=""><span class="img">
+                                <img src="../images/linkedin.svg" alt="">
+                            </span></a>
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container" id="explore">
+            <div class="heading">
+                Explore
+            </div>
+            <div class="cards-container">
+                <div class="cards">
+                    <p>Learn 🎓</p>
+                    <p>Kick-start your learning journey and prepare yourself with ample skills to tackle Quests.</p>
+                    <a href="#"><button class="btn">View Course</button>
+                    </a>
+                    <img src="../images/learn.png" alt="">
+                </div>
+                <div class="cards">
+                    <p>Earn 💰</p>
+                    <p>Participate in our Campaigns and Quests. If your submission meets the requirements, you may be rewarded money.</p>
+                    <a href="quiz-page.html"><button class="btn">View Quest</button>
+                    </a>
+                    <img src="../images/earn.png" alt="">
+                </div>
+                <div class="cards">
+                    <p>Events 📢</p>
+                    <p>Meet and network with knowledgable developers who will share their expertise, tips and best practices.</p>
+                    <a href="#"><button class="btn">Join Discord</button>
+                    </a>
+                    <img src="../images/events.png" alt="">
+                </div>
+            </div>
+        </div>
+
     </section>
 
-   <script src="../js/navbar.js"></script>
+    <script src="../script/navbar.js"></script>
 
 </body>
+
 </html>
