@@ -283,6 +283,11 @@ body.dark :is(.info p:first-child, .header, .top, .cards p:first-child){
 }
 
 @media screen and (max-width: 550px) {
+    .home > .heading{
+        font-size: 1.3rem;
+        padding: 10px;
+        padding-left: 20px;
+    }
     .main-container{
         width: 98%;
     }

@@ -1,0 +1,43 @@
+:root{
+    /* ===== Colors ===== */
+    --body-color: #F5F5F5;
+    --sidebar-color: #FFF;
+    --white-color: #FFF;
+    --primary-color: #4A3FC8;
+    --primary-color-light: #cdc8ff;
+    --toggle-color: #4A3FC8;
+    --text-color: #2d2d2d;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+.home .heading{
+    text-align: center;
+    /* background-color: var(--sidebar-color); */
+}
+
+.option{
+    background-color: var(--sidebar-color);
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.option .btn{
+    margin: 10px;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .option{
+        justify-content: center;
+    }
+}
