@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+
+    <!-- ********navbar css******** -->
+    <link rel="stylesheet" href="../styles/navbar.css">
+
+    <!-- ********wallet css******** -->
+    <link rel="stylesheet" href="../styles/wallet.css">
+
+    <!-- ********button css******** -->
+    <link rel="stylesheet" href="../styles/button.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../images/profile.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Your Name</span>
+                    <span class="profession">Welcome !</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="home.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="quiz-page.html">
+                            <i class='bx bx-check-square icon' ></i>
+                            <span class="text nav-text">Quests</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="my-quiz.html">
+                            <i class='bx bx-user-check icon'></i>
+                            <span class="text nav-text">My Quests</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="help.html">
+                            <i class='bx bx-help-circle icon' ></i>
+                            <span class="text nav-text">Help</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-align-justify icon' ></i>
+                            <span class="text nav-text">T&Cs</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="heading">Withdraw</div>
+        <div class="option">
+            <button class="btn">Add bank account</button>
+            <button class="btn">Add algorand wallet</button>
+            <button class="btn">Add solana address</button>
+        </div>
+
+        <div class="bank-account-container">
+            <div class="heading">Add Bank Account</div>
+            <form action="">
+                <label for="email" title="Please provide an email that we will urgently contact if any issues with payment arises.">Email</label>
+                <input type="email" name="email" id="email" title="Please provide an email that we will urgently contact if any issues with payment arises.">
+
+                <label for="acc-holder-name">Full legal name of bank account holder</label>
+                <p>First*, middle (if exists) and last* name</p>
+                <input type="text" name="acc-holder-name" id="acc-holder-name">
+
+                <label for="bank-name" title="Please provide the full official name of your bank. Refer to your country's official naming system if possible. Enter more information if in doubt.">Bank name (and bank code if available)</label>
+                <input type="text" id="bank-name" name="bank-name" title="Please provide the full official name of your bank. Refer to your country's official naming system if possible. Enter more information if in doubt.">
+
+                <label for="branch-code" title="Please enter your bank branch code and/or your bank branch name, according to your country's financial naming system. For example, India has the Indian Financial System Code, Singapore has the ACH Bank and Bank Branch Codes. 
+                Please provide more information if in doubt.">Bank branch code (and name, if applicable)</label>
+                <input type="text" id="branch-code" name="branch-code" title="Please enter your bank branch code and/or your bank branch name, according to your country's financial naming system. For example, India has the Indian Financial System Code, Singapore has the ACH Bank and Bank Branch Codes.  
+                Please provide more information if in doubt.">
+
+                <label for="acc-no" title="Please indicate your bank account number WITHOUT any hyphen or spacing.">Bank account number</label>
+                <input type="number" name="acc-no" id="acc-no" title="v">
+            </form>
+        </div>
+
+    </section>
+
+
+
+   <script src="../script/navbar.js"></script>
+
+</body>
+</html>

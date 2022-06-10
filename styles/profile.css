@@ -1,0 +1,481 @@
+:root{
+    /* ===== Colors ===== */
+    --body-color: #F5F5F5;
+    --sidebar-color: #FFF;
+    --white-color: #FFF;
+    --primary-color: #4A3FC8;
+    --primary-color-light: #cdc8ff;
+    --toggle-color: #4A3FC8;
+    --text-color: #2d2d2d;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+.home .heading{
+    width: 100%;
+    background-color: var(--sidebar-color);
+}
+
+.top-container{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    border-radius: 20px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.top-container table{
+   text-align: left;
+   margin-top: 10px;
+   width: 350px;
+   font-size: 1.1rem;
+   border-collapse:collapse;
+    table-layout:fixed;
+}
+
+.option{
+    margin: 20px auto;
+    background-color: var(--sidebar-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 97%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.option .btn{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+.top-container p:first-child{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.top-container p:nth-child(2){
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.top-container table td,th{
+    padding: 5px;
+    word-wrap:break-word;
+}
+
+.profile-container{
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 20px;
+    color: var(--text-color);
+    /* display: none; */
+}
+
+.progress-box{
+    /* border: 2px solid blue; */
+    border-radius: 20px;
+    background-image:  linear-gradient(#4e42ce95, #aea6d17f);
+    background-color: var(--sidebar-color);
+    /* padding: 20px; */
+    display: flex;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.progress-box .img{
+    /* border-radius: 100%; */
+    width: 200px;
+    /* background-color: pink; */
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-box .img img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.progress-box .info{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+}
+
+.progress-box .info p:first-child{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.info .level{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.info .level .level-img {
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(238, 113, 113); */
+   
+} 
+
+.info .level .level-img img{
+    width: 40px;
+    background-color: var(--white-color);
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.info .exp{
+    display: flex;
+    align-items: center;
+}
+
+.info .exp span{
+    background-color: var(--white-color);
+    color: #2d2d2d;
+    display: inline-block;
+    width: 40px;
+    /* height: 40px; */
+    padding: 5px;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.level-bar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.level-bar .left{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: var(--sidebar-color);
+    color: var(--text-color);
+    /* text-align: center; */
+    border-radius: 100%;
+    /* padding: 10px; */
+    border: 2px solid var(--text-color);
+    position: relative;
+    left: 1px;
+}
+
+.level-bar .right{
+    background-color: var(--primary-color);
+    width: 60%;
+    height: 15px;
+}
+
+.level-bar .right .fill{
+    width: 10%;
+    background-color: white;
+    height: 15px;
+}
+
+.info .points span{
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.progress-box .quest{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}
+
+.progress-box .quest i{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.level-rewards{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: var(--sidebar-color);
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.profile-container .heading{
+    padding: 10px;
+    font-size: 1.7rem;
+    background-color: transparent;
+}
+
+.rewards-item{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.rewards-container .rewards-item .txt{
+    font-size: 1rem;
+    /* background-color: var(--primary-color-light); */
+    margin-right: 10px;
+    width: 70px;
+    /* padding: 5px; */
+}
+
+.rewards-item .bar{
+    border: 1px solid var(--primary-color);
+    /* height: 50px; */
+    width: 70%;
+    font-size: 1.1rem;
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 500;
+}
+
+.rewards-item .bar span{
+    color: var(--primary-color);
+}
+
+#current-level .bar{
+    width: 80%;
+    border-width: 3px;
+}
+
+.earn-exp{
+    margin: 20px auto;
+    padding: 20px;
+    background-image:  linear-gradient(#4e42ce95, #aea6d17f);
+    background-color: var(--sidebar-color);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.exp-item{
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.exp-item span{
+    font-weight: lighter;
+}
+
+.recent{
+    margin: 20px auto;
+    background-color: var(--sidebar-color);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.recent-item{
+    border-bottom: 1px solid var(--text-color);
+    padding: 10px;
+}
+
+.recent .recent-item span{
+    font-weight: 500;
+}
+
+.account-container{
+    padding: 20px ;
+    color: var(--text-color);
+}
+
+.account-container form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /* margin: auto; */
+}
+
+form input{
+ padding: 5px 10px;
+ margin-bottom: 10px;
+ outline-color: var(--primary-color);
+ border: 1px solid var(--primary-color-light);
+ border-radius: 5px;
+ background-color: var(--sidebar-color);
+ color: inherit;
+}
+
+form label{
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.mail-check{
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    /* background-color: #cdc8ff; */
+    position: relative;
+    font-size: .8rem;
+}
+
+.mail-check #checkbox{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    margin-right: 10px;
+}
+
+.mail-check .p{
+    margin-left: 30px;
+}
+
+.account-container .btn{
+    padding: 10px;
+    width: 170px;
+    margin: 10px;
+}
+
+
+
+/* dark theme css */
+
+body.dark .home :is(.rewards-item .bar, .exp-item){
+    border-color: var(--text-color);
+}
+
+body.dark :is(.bar span, .info .points span, .quest i){
+    color: var(--text-color);
+}
+
+
+/* media query */
+
+@media screen and (max-width: 850px) {
+    .progress-box{
+        flex-wrap: wrap;
+        position: static;
+    }
+
+    .progress-box .quest{
+        position: static;
+        margin: 20px;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .home > .heading{
+        font-size: 1.3rem;
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    .top-container{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .progress-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .account-container form{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .top-container table{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .profile-container{
+        padding: 20px 5px;
+    }
+    .progress-box .info{
+        width: 100%;
+        padding: 0;
+    }
+
+    .progress-box .info p:first-child{
+        text-align: center;
+    }
+
+    .progress-box .img{
+        width: 100px;
+    }
+
+    .info .level .level-img{
+        margin-bottom: 10px;
+    }
+
+    .progress-box .quest{
+        margin: 10px  0;
+        font-size: 1rem;
+    }
+
+    .level-rewards{
+        padding: 20px 10px;
+
+    }
+
+    .level-rewards .heading{
+       font-size: 1.5rem;
+    }
+
+    .rewards-container .rewards-item .txt{
+        font-size: 0.8rem;
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    .rewards-item .bar{
+        width: 60%;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 350px) {
+    .top-container table{
+        font-size: 0.8rem;
+    }
+}
