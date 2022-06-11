@@ -4,26 +4,235 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS Files -->
+    
+    <!----======== CSS ======== -->
+    <!-- *******navbar css link******* -->
+    <link rel="stylesheet" href="../styles/navbar.css">
+
+    <!-- *******quiz generator css link******* -->
     <link rel="stylesheet" href="../styles/quiz_generator.css">
+
+    <!-- *******button css link******* -->
+    <link rel="stylesheet" href="../styles/button.css">
+
+    <!-- *******quiz-card css link******* -->
+    <link rel="stylesheet" href="../styles/quiz-card.css">
+
     <title>Quiz Generator</title>
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
-    <h1>Quiz Creator</h1>
-  <div class="addQuestions">
-    <input id="questionInput" type="text" placeholder="Question">
-    <input id="correctInput" type="text" placeholder="Correct Answer">
-    <input id="wrongOneInput" type="text" placeholder="Wrong Answer 1">
-    <input id="wrongTwoInput" type="text" placeholder="Wrong Answer 2">
-    <input id="wrongThreeInput" type="text" placeholder="Wrong Answer 3">
-    <button onclick="handlers.addQuestion()">Add Question</button>
-  </div>
-  <div class="info">
-    <li id="NumberQuestionsInQuiz">You currently have 0 questions added to your quiz</li>
-    <button onclick="view.displayQuestions()" id="startQuiz">Start Quiz</button>
-  </div>
-  <p class="answersCorrect"></p>
-  <div class="questionsWrapper"></div>
-  <script src="../script/quiz_generator.js"></script>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../images/profile.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Your Name</span>
+                    <span class="profession">Welcome !</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="home.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-link">
+                        <a href="quiz-page.html">
+                            <i class='bx bx-check-square icon' ></i>
+                            <span class="text nav-text">Quests</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="my-quiz.html">
+                            <i class='bx bx-user-check icon'></i>
+                            <span class="text nav-text">My Quests</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-help-circle icon' ></i>
+                            <span class="text nav-text">Help</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-align-justify icon' ></i>
+                            <span class="text nav-text">T&Cs</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="heading">Quiz Generator</div>
+
+        <div class="main">
+        <div class="addQuestions">
+          <label for="category">Category</label>
+          <input type="text" name="category" placeholder="Enter Category">
+
+          <label for="title">Title</label>
+          <input type="text" name="title" placeholder="Enter Title">
+
+          <label for="reward">Reward Amount</label>
+          <input type="number" name="reward" placeholder="Enter Reward Amount($)">
+
+          <label for="question">Question</label>
+          <input id="questionInput" type="text" placeholder="Question">
+
+          <label for="correctOpt">Correct Option</label>
+          <input id="correctInput" type="text" placeholder="Correct Answer">
+
+          <label for="wrongOpt">Wrong Option</label>
+          <input id="wrongOneInput" type="text" placeholder="Wrong Answer 1">
+
+          <label for="wrongOpt">Wrong Option</label>
+          <input id="wrongTwoInput" type="text" placeholder="Wrong Answer 2">
+
+          <label for="wrongOpt">Wrong Option</label>
+          <input id="wrongThreeInput" type="text" placeholder="Wrong Answer 3">
+          <button class="btn" onclick="handlers.addQuestion()" >Add Question</button>
+        </div>
+
+        <div class="info">
+          <li id="NumberQuestionsInQuiz">You currently have 0 questions added to your quiz</li>
+          <div class="buttons">
+            <button class="btn" onclick="view.displayQuestions()" id="startQuiz">Preview</button>
+            <button class="btn">Save Quiz</button>
+          </div>
+         
+        </div>
+        <p class="answersCorrect"></p>
+        <div class="questionsWrapper"></div>
+      </div>
+
+      <div class="my-quiz">
+        <div class="heading">See your quiz created here</div>
+        <!-- <div class="no-quiz">
+            <p>Currently no quiz is created</p>
+        </div> -->
+        <div class="quiz-container">
+            <div class="quiz-card crypto">
+                <img src="../images/category-crypto.svg" alt="crypto-currencies">
+                <h2>Practice crypto</h2>
+                <h3>Crypto Currencies</h3>
+                <p>$5 Reward | 11 days left</p>
+                <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                <a href="quiz_info.html"><button class="btn">View</button></a>
+            </div>
+            <div class="quiz-card maths">
+                <img src="../images/category-maths.svg" alt="mathematics">
+                <h2>Practice Maths</h2>
+                <h3>Mathematics</h3>
+                <p>$5 Reward | 11 days left</p>
+                <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                <a href="#"><button class="btn">View</button></a>
+            </div>
+            <div class="quiz-card business">
+                <img src="../images/category-business.svg" alt="business">
+                <h2>Practice Business</h2>
+                <h3>Business</h3>
+                <p>$5 Reward | 11 days left</p>
+                <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                <a href="#"><button class="btn">View</button></a>
+            </div>
+            <div class="quiz-card science">
+                <img src="../images/cateogry-science.svg" alt="science">
+                <h2>Practice Science</h2>
+                <h3>Science</h3>
+                <p>$5 Reward | 11 days left</p>
+                <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                <a href="#"><button class="btn">View</button></a>
+            </div>
+            <div class="quiz-card technology">
+                <img src="../images/category-technology.svg" alt="technology">
+                <h2>Practice Technology</h2>
+                <h3>Technology</h3>
+                <p>$5 Reward | 11 days left</p>
+                <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                <a href="#"><button class="btn">View</button></a>
+            </div>
+            <div class="quiz-card blockchain">
+                <img src="../images/category-blockchain.svg" alt="blockchain">
+                <h2>Practice Block Chain</h2>
+                <h3>Block Chain</h3>
+                <p>$5 Reward | 11 days left</p>
+                <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                <a href="#"><button class="btn">View</button></a>
+            </div>
+            <div class="quiz-card social">
+                <img src="../images/category-social.svg" alt="social-science">
+                <h2>Practice Social Science</h2>
+                <h3>Social Science</h3>
+                <p>$5 Reward | 11 days left</p>
+                <p>06 jun 22, 9:30pm<br>-17 jun 22, 9:30pm</p>
+                <a href="#"><button class="btn">View</button></a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="../script/quiz_generator.js"></script>
+   <script src="../script/navbar.js"></script>
+
 </body>
 </html>

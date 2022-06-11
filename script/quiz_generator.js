@@ -29,8 +29,8 @@ var quiz = {
           if (elementClicked.parentNode.nextElementSibling === null) {
             var showAdd = document.querySelector(".addQuestions");
             var showInfo = document.querySelector(".info");
-            showAdd.style.display = "block";
-            showInfo.style.display = "block";
+            showAdd.style.display = "flex";
+            showInfo.style.display = "flex";
           } else {
             //If there is a next siblng then add the is-active class to it
             elementClicked.parentNode.nextElementSibling.classList.add(
@@ -103,11 +103,11 @@ var view = {
       questionsWrapper.firstChild.classList.add("is-active");
 
       //add the text to the inputs the values in the questions array
-      questionLi.textContent = question.question;
-      correctLi.textContent = question.correct;
-      wrongOneLi.textContent = question.wrongOne;
-      wrongTwoLi.textContent = question.wrongTwo;
-      wrongThreeLi.textContent = question.wrongThree;
+      questionLi.textContent ="Question: "+ question.question;
+      correctLi.textContent ="A. "+ question.correct;
+      wrongOneLi.textContent ="B. "+ question.wrongOne;
+      wrongTwoLi.textContent = "C. "+question.wrongTwo;
+      wrongThreeLi.textContent ="D. "+ question.wrongThree;
 
       //If its the last question the button should say finish if not it should say next
       if (index === quiz.questions.length - 1) {
@@ -149,9 +149,9 @@ var view = {
         if (event.target.className === "correct") {
           correctAnswers++;
           answersCorrect.textContent = "Correct answers: " + correctAnswers;
-          event.target.style.color = "#2ecc71";
+          event.target.style.backgroundColor  = "#2ecc71";
         } else if (event.target.className === "wrong") {
-          event.target.style.color = "#e74c3c";
+          event.target.style.backgroundColor = "#e74c3c";
           var itemChildren = event.target.parentNode.children;
           for (i = 0; i < itemChildren.length; i++) {
             if (itemChildren[i].classList.contains("correct")) {
