@@ -168,7 +168,6 @@ var view = {
       };
     }
   },
-
   //count objects in array to show how many questions added to screen
   displayNumberOfQuestions: function () {
     var numberLi = document.getElementById("NumberQuestionsInQuiz");
