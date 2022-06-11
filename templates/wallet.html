@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!----======== CSS ======== -->
 
     <!-- ********navbar css******** -->
@@ -16,12 +17,13 @@
 
     <!-- ********button css******** -->
     <link rel="stylesheet" href="../styles/button.css">
-    
+
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
-    <!--<title>Dashboard Sidebar Menu</title>--> 
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
 </head>
+
 <body>
     <nav class="sidebar close">
         <header>
@@ -50,14 +52,14 @@
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="home.html">
-                            <i class='bx bx-home-alt icon' ></i>
+                            <i class='bx bx-home-alt icon'></i>
                             <span class="text nav-text">Home</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="quiz-page.html">
-                            <i class='bx bx-check-square icon' ></i>
+                            <i class='bx bx-check-square icon'></i>
                             <span class="text nav-text">Quests</span>
                         </a>
                     </li>
@@ -71,21 +73,21 @@
 
                     <li class="nav-link">
                         <a href="help.html">
-                            <i class='bx bx-help-circle icon' ></i>
+                            <i class='bx bx-help-circle icon'></i>
                             <span class="text nav-text">Help</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-align-justify icon' ></i>
+                            <i class='bx bx-align-justify icon'></i>
                             <span class="text nav-text">T&Cs</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-wallet icon' ></i>
+                            <i class='bx bx-wallet icon'></i>
                             <span class="text nav-text">Wallets</span>
                         </a>
                     </li>
@@ -96,7 +98,7 @@
             <div class="bottom-content">
                 <li class="">
                     <a href="#">
-                        <i class='bx bx-log-out icon' ></i>
+                        <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Logout</span>
                     </a>
                 </li>
@@ -112,7 +114,7 @@
                         <span class="switch"></span>
                     </div>
                 </li>
-                
+
             </div>
         </div>
 
@@ -120,40 +122,177 @@
 
     <section class="home">
         <div class="heading">Withdraw</div>
+
+        <div class="top-container">
+            <p>Total Earnings</p>
+            <p>US$0.00</p>
+            <table>
+                <tr>
+                    <th>Current balance</th>
+                    <td>US$0.07890</td>
+                </tr>
+                <tr>
+                    <th>Withdrawn</th>
+                    <td>US$0.00</td>
+                </tr>
+            </table>
+            <button class="btn">Withdraw</button>
+        </div>
+
         <div class="option">
             <button class="btn">Add bank account</button>
             <button class="btn">Add algorand wallet</button>
             <button class="btn">Add solana address</button>
         </div>
 
-        <div class="bank-account-container">
+
+        <div class="container" id="bank-account-container">
             <div class="heading">Add Bank Account</div>
             <form action="">
-                <label for="email" title="Please provide an email that we will urgently contact if any issues with payment arises.">Email</label>
-                <input type="email" name="email" id="email" title="Please provide an email that we will urgently contact if any issues with payment arises.">
+                <label for="email"
+                    title="Please provide an email that we will urgently contact if any issues with payment arises.">Email</label>
+                <input type="email" name="email" id="email"
+                    title="Please provide an email that we will urgently contact if any issues with payment arises.">
 
                 <label for="acc-holder-name">Full legal name of bank account holder</label>
                 <p>First*, middle (if exists) and last* name</p>
                 <input type="text" name="acc-holder-name" id="acc-holder-name">
 
-                <label for="bank-name" title="Please provide the full official name of your bank. Refer to your country's official naming system if possible. Enter more information if in doubt.">Bank name (and bank code if available)</label>
-                <input type="text" id="bank-name" name="bank-name" title="Please provide the full official name of your bank. Refer to your country's official naming system if possible. Enter more information if in doubt.">
+                <label for="bank-name"
+                    title="Please provide the full official name of your bank. Refer to your country's official naming system if possible. Enter more information if in doubt.">Bank
+                    name (and bank code if available)</label>
+                <input type="text" id="bank-name" name="bank-name"
+                    title="Please provide the full official name of your bank. Refer to your country's official naming system if possible. Enter more information if in doubt.">
 
                 <label for="branch-code" title="Please enter your bank branch code and/or your bank branch name, according to your country's financial naming system. For example, India has the Indian Financial System Code, Singapore has the ACH Bank and Bank Branch Codes. 
                 Please provide more information if in doubt.">Bank branch code (and name, if applicable)</label>
                 <input type="text" id="branch-code" name="branch-code" title="Please enter your bank branch code and/or your bank branch name, according to your country's financial naming system. For example, India has the Indian Financial System Code, Singapore has the ACH Bank and Bank Branch Codes.  
                 Please provide more information if in doubt.">
 
-                <label for="acc-no" title="Please indicate your bank account number WITHOUT any hyphen or spacing.">Bank account number</label>
+                <label for="acc-no" title="Please indicate your bank account number WITHOUT any hyphen or spacing.">Bank
+                    account number</label>
                 <input type="number" name="acc-no" id="acc-no" title="v">
             </form>
+            <p>Please check your inputs and ensure that your details are correct so the transfer successfully goes
+                through.</p>
+            <br>
+            <p>Ensure you have read through the <a href="help.html" class="link"> List of Acceptable Countries </a>for
+                bank account transfer and the <a href="help.html" class="link"> step-by-step instructions</a> on how to
+                update your bank account particulars in our guide before updating your details here.</p>
+            <button class="btn">Add bank account</button>
         </div>
 
+        <div class="container" id="alogrand-container">
+            <div class="heading">
+                Add Algorand wallet
+            </div>
+            <form action="">
+                <label for="key">Public address/key</label>
+                <input type="text" id="key" name="key">
+                <p>
+                    Payouts are in <strong>ALGO</strong> on the Algorand blockchain. We recommend using <a href="#">Pera
+                        Wallet</a> to receive your payouts. StackUp will never ask for your private keys.
+                </p>
+                <div class="check-box">
+                    <input type="checkbox" name="" id="chkbx"><label for="chkbx">I’ve checked that the address I’ve provided is correct.</label>
+                </div>
+            </form>
+            
+            
+            <button class="btn">Add account</button>
+        </div>
+
+        <div class="container" id="solana-container">
+            <div class="heading">
+                Add Solana address
+            </div>
+            <form action="">
+                <label for="key">Public address/key</label>
+                <input type="text" id="key" name="key">
+                <p>
+                    Payouts are in <strong>USDC</strong>  on the Solana blockchain. We recommend using <a href="#">Phantom</a>  to receive your payouts. StackUp will never ask for your private keys.
+                </p>
+                <div class="check-box">
+                    <input type="checkbox" name="" id="chkbx"><label for="chkbx">I’ve checked that the address I’ve provided is correct.</label>
+                </div>
+            </form>
+            
+            
+            <button class="btn">Add account</button>
+        </div>
+
+        <div class="heading">
+            Transaction History
+        </div>
+
+        <div class="option" id="transaction">
+            <button class="btn">Withdrawal Log</button>
+            <button class="btn">Balance Changelog</button>
+        </div>
+
+        <div class="log" id="withdrawal-log">
+            <table border="1px">
+                <tr>
+                    <th title="Date refers to the transaction date (when a withdrawal request is successful).">Date &quest;</th>
+                    <th>Description</th>
+                    <th>Final sum</th>
+                    <th>Status</th>
+                    <th title="Last updated date refers to the date when the transaction has a change in status.">Last Updated &quest;</th>
+                </tr>
+                <tr>
+                    <td>11-06-2022</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>$569</td>
+                    <td>sent</td>
+                    <td>11-06-2022</td>
+                </tr>
+                <tr>
+                    <td>11-06-2022</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>$569</td>
+                    <td>sent</td>
+                    <td>11-06-2022</td>
+                </tr>
+                <tr>
+                    <td>11-06-2022</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>$569</td>
+                    <td>sent</td>
+                    <td>11-06-2022</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="log" id="balance-changelog">
+            <table border="1px">
+                <tr>
+                    <th>Date</th>
+                    <th>Balance change</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>11-06-2022</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>$569</td>
+                </tr>
+                <tr>
+                    <td>11-06-2022</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>$569</td>
+                </tr>
+                <tr>
+                    <td>11-06-2022</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                    <td>$569</td>
+                </tr>
+            </table>
+        </div>
     </section>
 
 
 
-   <script src="../script/navbar.js"></script>
+    <script src="../script/navbar.js"></script>
 
 </body>
+
 </html>
