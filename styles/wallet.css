@@ -74,6 +74,23 @@
   margin: 10px;
 }
 
+#withdrawl-btn{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+#close{
+  border: 1px solid gray;
+  color: gray;
+  padding: 5px 15px; 
+  font-size: .9rem;
+}
+
+#close:hover{
+  background-color: gray;
+  color: var(--white-color);
+}
+
 .container {
   padding: 20px;
   border-radius: 20px;
