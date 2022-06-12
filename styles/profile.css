@@ -60,6 +60,10 @@
     padding: 10px;
 }
 
+#profile-btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
 
 
 .top-container p:first-child{
