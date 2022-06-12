@@ -1,6 +1,7 @@
 let addAccBtn = document.getElementById("add-acc");
 let addAlgoBtn = document.getElementById("add-algo");
 let addSolaBtn = document.getElementById("add-sola");
+let closeBtn = document.getElementById("close");
 
 let withdrawlBtn = document.getElementById("withdrawl-btn");
 let balanceBtn = document.getElementById("balance-btn");
@@ -11,6 +12,12 @@ let bankSolaDiv = document.getElementById("solana-container");
 
 let withdrawlDiv = document.getElementById("withdrawal-log");
 let balanceDiv = document.getElementById("balance-changelog");
+
+closeBtn.addEventListener("click", () => {
+  bankAlgoDiv.style.display = "none";
+  bankSolaDiv.style.display = "none";
+  bankAccDiv.style.display = "none";
+});
 
 addAccBtn.addEventListener("click", () => {
   bankAlgoDiv.style.display = "none";
