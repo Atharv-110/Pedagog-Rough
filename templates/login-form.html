@@ -35,7 +35,7 @@
                     <div class="line"></div>
                </div>
                <br>
-               <form>
+               <form name="loginForm" method="post">
                     <label for="email">Email*</label>
                     <br>
                     <input type="email" name="email" placeholder="Enter Email*" required>
@@ -47,7 +47,7 @@
                          <p id="forget-password">Forget Password?</p>
                     </a>
                     <br>
-                    <input type="submit" value="Login" class="btn">
+                    <input type="button" name="log" id="login-btn" value="Login" class="btn" onclick="loginFunction()">
 
                </form>
                <br>
@@ -59,6 +59,7 @@
           </div>
           <!-- form ends here -->
      </div>
+     <script src="../script/login.js"></script>
 </body>
 
 </html>
