@@ -306,10 +306,10 @@ body.dark .switch::before{
 }
 
 .sidebar.close ~ .home{
-    left: 55px;
+    left: 50px;
     /* height: 100vh; */
     overflow-x: hidden;
-    width: calc(100% - 55px);
+    width: calc(100% - 50px);
 }
 body.dark .home .heading{
     color: var(--text-color);
