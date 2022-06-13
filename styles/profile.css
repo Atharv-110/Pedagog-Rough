@@ -319,6 +319,7 @@
 .account-container{
     padding: 20px ;
     color: var(--text-color);
+    display: none;
 }
 
 .account-container form{
@@ -431,7 +432,9 @@ body.dark :is(.bar span, .info .points span, .quest i){
     }
 
     .profile-container{
-        padding: 20px 5px;
+        padding:0;
+        width: 95%;
+        margin: 10px auto;
     }
     .progress-box .info{
         width: 100%;
@@ -448,6 +451,12 @@ body.dark :is(.bar span, .info .points span, .quest i){
 
     .info .level .level-img{
         margin-bottom: 10px;
+    }
+
+    .recent{
+        padding: 10px;
+        width: 100%;
+        margin: 20px 0;
     }
 
     .progress-box .quest{
@@ -473,9 +482,6 @@ body.dark :is(.bar span, .info .points span, .quest i){
     .rewards-item .bar{
         width: 60%;
     }
-
-    
-
 }
 
 @media screen and (max-width: 350px) {
